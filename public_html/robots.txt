@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /php/
+Disallow: /uploads/
+
+Sitemap: https://attral.org/sitemap.xml

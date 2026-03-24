@@ -1,0 +1,42 @@
+:root {
+  /* Primary */
+  --color-orange: #FFA500;
+  --color-orange-dark: #E59400;
+  --color-orange-light: #FFF4DF;
+  --color-orange-tint: #FFF8EE;
+
+  /* Secondary / Neutrals */
+  --color-slate: #546373;
+  --color-slate-dark: #3A4550;
+  --color-slate-light: #8FA0AD;
+
+  /* Backgrounds (LIGHT THEME ONLY) */
+  --color-bg-primary: #FAFAF8;
+  --color-bg-secondary: #F4F5F7;
+  --color-bg-card: #FFFFFF;
+  --color-bg-orange-tint: #FFF8EE;
+
+  /* Text */
+  --color-text-primary: #1A1E26;
+  --color-text-secondary: #546373;
+  --color-text-muted: #8FA0AD;
+  --color-text-inverse: #FFFFFF;
+
+  /* Border */
+  --color-border: #E4E7EB;
+  --color-border-strong: #C9CDD4;
+
+  /* Utility */
+  --color-success: #2ECC71;
+  --color-error: #E74C3C;
+
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+}

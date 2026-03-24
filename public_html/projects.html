@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATTRAL — Projects | Portfolio</title>
+  <meta name="description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://attral.org/projects.html">
+
+  <meta property="og:title" content="ATTRAL Projects">
+  <meta property="og:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
+  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:url" content="https://attral.org/projects.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ATTRAL Projects">
+  <meta name="twitter:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
+  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">ATTRAL <span>A</span></a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="process.html" class="nav-link">Process</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn-primary cta-nav">Get a Quote →</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
+  <div class="nav-mobile-overlay" aria-hidden="true">
+    <button class="nav-close" aria-label="Close menu">×</button>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="background:#FAFAF8;">
+    <div class="container">
+      <h1>Our Work</h1>
+      <p>Real projects. Measurable outcomes.</p>
+    </div>
+  </section>
+
+  <section class="section" style="position:sticky;top:72px;z-index:900;background:#fff;padding:16px 0;">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;">
+      <button class="filter-btn active btn-secondary" data-category="all">All</button>
+      <button class="filter-btn btn-secondary" data-category="pcb">PCB & Electronics</button>
+      <button class="filter-btn btn-secondary" data-category="web">Web Dev</button>
+      <button class="filter-btn btn-secondary" data-category="ai">AI Solutions</button>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff;border-top:1px solid var(--color-border);">
+    <div class="container card-grid-4">
+      <article class="card card--project project-item" data-category="pcb">
+        <img class="card__image" src="https://via.placeholder.com/600x360?text=PCB+Project" alt="PCB Project" loading="lazy">
+        <div class="card__body">
+          <span class="small-uppercase">PCB & Electronics</span>
+          <h3>Industrial Controller Board</h3>
+          <p>Custom design with EMI control and power distribution for manufacturing automation.</p>
+          <a class="btn-text" href="contact.html">Discuss Your Project →</a>
+        </div>
+      </article>
+      <article class="card card--project project-item" data-category="web">
+        <img class="card__image" src="https://via.placeholder.com/600x360?text=Web+App" alt="Web App" loading="lazy">
+        <div class="card__body">
+          <span class="small-uppercase">Web Development</span>
+          <h3>Supply Chain Management Platform</h3>
+          <p>High-performance portal with tracking, reporting, and real-time APIs.</p>
+          <a class="btn-text" href="contact.html">Discuss Your Project →</a>
+        </div>
+      </article>
+      <article class="card card--project project-item" data-category="ai">
+        <img class="card__image" src="https://via.placeholder.com/600x360?text=AI+Automation" alt="AI Automation" loading="lazy">
+        <div class="card__body">
+          <span class="small-uppercase">AI Solutions</span>
+          <h3>Process Automation Pipeline</h3>
+          <p>Document ingestion and automated ticket routing with LLM summarization.</p>
+          <a class="btn-text" href="contact.html">Discuss Your Project →</a>
+        </div>
+      </article>
+      <article class="card card--project project-item" data-category="pcb">
+        <img class="card__image" src="https://via.placeholder.com/600x360?text=PCB+Assembly" alt="PCB Assembly" loading="lazy">
+        <div class="card__body">
+          <span class="small-uppercase">PCB & Electronics</span>
+          <h3>Medical-Grade Sensor Module</h3>
+          <p>CERAs for assembly, test controls, and compliance documentation.</p>
+          <a class="btn-text" href="contact.html">Discuss Your Project →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-orange);color:#fff;">
+    <div class="container" style="text-align:center;">
+      <h2>Seen enough? Let's build yours.</h2>
+      <a class="btn-primary" href="contact.html">Start a Project →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top-border"></div>
+  <div class="footer-inner">
+    <div class="footer-column">
+      <h4>ATTRAL</h4>
+      <p>Engineering the future, one circuit at a time.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">PCB Design</a></li>
+        <li><a href="services.html">PCB Fabrication</a></li>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">AI Solutions</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 Phase-2 Sathuvachari, Vellore 632009, TN</li>
+        <li>📧 info@attral.org</li>
+        <li>📧 projects@attral.org</li>
+        <li>📞 +91 8903479870</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ATTRAL Engineering. All rights reserved.</span>
+    <span><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Use</a></span>
+  </div>
+</footer>
+
+<a href="contact.html" class="sticky-cta">Get a Quote →</a>
+<a href="https://wa.me/918903479870?text=Hi%20ATTRAL%2C%20I%27d%20like%20to%20discuss%20a%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:890;">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/projects-filter.js" defer></script>
+</body>
+</html>
