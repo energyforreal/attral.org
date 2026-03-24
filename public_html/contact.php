@@ -121,6 +121,9 @@
       <aside class="card" style="box-shadow:0 4px 24px rgba(0,0,0,0.06);">
         <h3>Contact Info</h3>
         <p>📍 Phase-2 Sathuvachari,<br>Vellore 632009,<br>Tamil Nadu, India</p>
+        <div style="margin-top:16px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0!2d79.131!3d12.971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47a!2sPhase-2%20Sathuvachari%2C%20Vellore!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin" width="100%" height="200" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <p>📧 General: <a href="mailto:info@attral.org">info@attral.org</a><br>📧 Projects: <a href="mailto:projects@attral.org">projects@attral.org</a></p>
         <p>📞 +91 8903479870</p>
         <p><a class="btn-primary" href="https://wa.me/918903479870" target="_blank" rel="noopener">WhatsApp Us →</a></p>

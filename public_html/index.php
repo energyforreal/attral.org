@@ -61,20 +61,20 @@
   <section class="section" style="background:#FAFAF8;">
     <div class="container hero-grid">
       <div>
-        <p class="small-uppercase" style="margin-bottom:18px;">PCB Engineering · Web Development · AI Solutions</p>
-        <h1 class="hero-title" style="font-size:3.4rem;line-height:1.1;">Engineering the Future,<br>One Circuit at a Time.</h1>
-        <p class="hero-subhead">ATTRAL combines precision electronics, scalable software, and intelligent AI systems to deliver complete technical solutions — from schematic to deployment.</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="contact.html" class="btn-primary">Start Your Project →</a>
-          <a href="projects.html" class="btn-text">View Our Work ↓</a>
+        <p class="small-uppercase animate-on-scroll" style="margin-bottom:18px;">PCB Engineering · Web Development · AI Solutions</p>
+        <h1 class="hero-title animate-on-scroll" style="font-size:3.4rem;line-height:1.1;">Engineering the Future,<br>One Circuit at a Time.</h1>
+        <p class="hero-subhead animate-on-scroll">ATTRAL combines precision electronics, scalable software, and intelligent AI systems to deliver complete technical solutions — from schematic to deployment.</p>
+        <div class="animate-on-scroll" style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.php" class="btn-primary">Start Your Project →</a>
+          <a href="projects.php" class="btn-text">View Our Work ↓</a>
         </div>
-        <div class="stats-strip">
+        <div class="stats-strip animate-on-scroll">
           <div class="stat-pill">100+ Projects Delivered</div>
           <div class="stat-pill">4 Engineering Disciplines</div>
           <div class="stat-pill">Vellore, India</div>
         </div>
       </div>
-      <div style="display:flex;align-items:center;justify-content:center;">
+      <div class="animate-on-scroll fade-in-right" style="display:flex;align-items:center;justify-content:center;">
         <img src="https://via.placeholder.com/540x360?text=PCB+Illustration" alt="Isometric circuit illustration" width="540" height="360" loading="eager" style="border-radius:12px;" />
       </div>
     </div>
@@ -82,25 +82,25 @@
 
   <section class="section services">
     <div class="container">
-      <p class="section-title">WHAT WE BUILD</p>
-      <h2>End-to-End Technical Solutions</h2>
+      <p class="section-title animate-on-scroll">WHAT WE BUILD</p>
+      <h2 class="animate-on-scroll">End-to-End Technical Solutions</h2>
       <div class="card-grid-4">
-        <article class="card card--service">
+        <article class="card card--service animate-on-scroll">
           <h3>PCB Design</h3>
           <p>Schematic to Gerber. Precision-engineered for your product.</p>
-          <a class="btn-text" href="services.html">Learn More →</a>
+          <a class="btn-text" href="services.php">Learn More →</a>
         </article>
-        <article class="card card--service">
+        <article class="card card--service animate-on-scroll">
           <h3>PCB Fabrication & Assembly</h3>
           <p>From bare board to fully assembled, tested hardware.</p>
-          <a class="btn-text" href="services.html">Learn More →</a>
+          <a class="btn-text" href="services.php">Learn More →</a>
         </article>
-        <article class="card card--service">
+        <article class="card card--service animate-on-scroll">
           <h3>Web Development</h3>
           <p>Full-stack platforms built for performance and scale.</p>
           <a class="btn-text" href="services.html">Learn More →</a>
         </article>
-        <article class="card card--service">
+        <article class="card card--service animate-on-scroll">
           <h3>AI Solutions</h3>
           <p>Intelligent agents and automated workflows that work for you.</p>
           <a class="btn-text" href="services.html">Learn More →</a>

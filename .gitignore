@@ -1,0 +1,17 @@
+# Uploaded client files — never commit
+public_html/uploads/*
+!public_html/uploads/.gitkeep
+!public_html/uploads/.htaccess
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts (if you add minification later)
+*.min.css
+*.min.js
