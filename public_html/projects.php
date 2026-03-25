@@ -10,13 +10,13 @@
 
   <meta property="og:title" content="ATTRAL Projects">
   <meta property="og:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/projects.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Projects">
   <meta name="twitter:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

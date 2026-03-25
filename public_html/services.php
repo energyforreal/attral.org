@@ -9,13 +9,13 @@
   <link rel="canonical" href="https://attral.org/services.html">
   <meta property="og:title" content="ATTRAL Services - PCB, Web, AI">
   <meta property="og:description" content="Deep-dive into ATTRAL's service offerings and engineering capabilities.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/services.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Services - PCB, Web, AI">
   <meta name="twitter:description" content="Deep-dive into ATTRAL's service offerings and engineering capabilities.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

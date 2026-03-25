@@ -1,34 +1,26 @@
-const header = document.querySelector('.site-header');
-const navToggle = document.querySelector('.nav-toggle');
-const mobileOverlay = document.querySelector('.nav-mobile-overlay');
-const navClose = document.querySelector('.nav-close');
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+  const navLinks = document.querySelectorAll('header nav a[href]');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
+  navLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('http')) {
+      return;
+    }
 
-if (navToggle && mobileOverlay) {
-  navToggle.addEventListener('click', () => mobileOverlay.classList.add('open'));
-}
+    const normalizedHref = href.replace(/^\.\//, '');
+    let isActive = false;
 
-if (navClose && mobileOverlay) {
-  navClose.addEventListener('click', () => mobileOverlay.classList.remove('open'));
-}
+    if (normalizedHref === 'index.html') {
+      isActive = currentPath === '/' || currentPath.endsWith('/index.html') || currentPath.endsWith('/index.php');
+    } else {
+      const basename = currentPath.split('/').pop() || '';
+      isActive = basename === normalizedHref;
+    }
 
-document.querySelectorAll('.nav-mobile-overlay a').forEach((link) => {
-  link.addEventListener('click', () => mobileOverlay.classList.remove('open'));
-});
-
-document.querySelectorAll('.nav-link').forEach((a) => {
-  const href = a.getAttribute('href');
-  if (
-    (href === 'index.html' && (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html'))) ||
-    window.location.pathname.endsWith(href)
-  ) {
-    a.classList.add('active');
-  }
+    if (isActive) {
+      link.classList.add('text-brand');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
 });

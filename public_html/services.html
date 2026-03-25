@@ -9,19 +9,43 @@
   <link rel="canonical" href="https://attral.org/services.html">
   <meta property="og:title" content="ATTRAL Services - PCB, Web, AI">
   <meta property="og:description" content="Deep-dive into ATTRAL's service offerings and engineering capabilities.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/services.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Services - PCB, Web, AI">
   <meta name="twitter:description" content="Deep-dive into ATTRAL's service offerings and engineering capabilities.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#FFA500',
+            dark: '#1A1E26',
+            surface: '#F5F0E8',
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <meta name="theme-color" content="#FFA500">
+
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tailwind-custom.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -120,5 +144,4 @@
   </section>
 </main>
 
-<script src="js/projects-filter.js" defer></script>
 <?php include 'includes/footer.php'; ?>

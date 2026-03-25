@@ -1,0 +1,16 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad6" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#1A1E26;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#F5F0E8"/>
+  <rect width="800" height="500" fill="url(#grad6)"/>
+  <text x="400" y="250" font-family="DM Sans, sans-serif" font-size="32" fill="#8FA0AD" text-anchor="middle" dominant-baseline="middle">
+    AI Automation Pipeline
+  </text>
+  <text x="400" y="290" font-family="DM Sans, sans-serif" font-size="16" fill="#B8ADA0" text-anchor="middle" dominant-baseline="middle">
+    Intelligent Process Solutions
+  </text>
+</svg>

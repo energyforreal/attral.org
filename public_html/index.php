@@ -32,13 +32,13 @@
 
   <meta property="og:title" content="ATTRAL — Engineering. Software. AI.">
   <meta property="og:description" content="End-to-end technical solutions: PCB engineering, web development, and AI systems.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL — Engineering. Software. AI.">
   <meta name="twitter:description" content="End-to-end technical solutions from Vellore, India.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,8 +65,8 @@
         <h1 class="hero-title animate-on-scroll" style="font-size:3.4rem;line-height:1.1;">Engineering the Future,<br>One Circuit at a Time.</h1>
         <p class="hero-subhead animate-on-scroll">ATTRAL combines precision electronics, scalable software, and intelligent AI systems to deliver complete technical solutions — from schematic to deployment.</p>
         <div class="animate-on-scroll" style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="contact.php" class="btn-primary">Start Your Project →</a>
-          <a href="projects.php" class="btn-text">View Our Work ↓</a>
+          <a href="contact.html" class="btn-primary">Start Your Project →</a>
+          <a href="projects.html" class="btn-text">View Our Work ↓</a>
         </div>
         <div class="stats-strip animate-on-scroll">
           <div class="stat-pill">100+ Projects Delivered</div>
@@ -88,12 +88,12 @@
         <article class="card card--service animate-on-scroll">
           <h3>PCB Design</h3>
           <p>Schematic to Gerber. Precision-engineered for your product.</p>
-          <a class="btn-text" href="services.php">Learn More →</a>
+          <a class="btn-text" href="services.html">Learn More →</a>
         </article>
         <article class="card card--service animate-on-scroll">
           <h3>PCB Fabrication & Assembly</h3>
           <p>From bare board to fully assembled, tested hardware.</p>
-          <a class="btn-text" href="services.php">Learn More →</a>
+          <a class="btn-text" href="services.html">Learn More →</a>
         </article>
         <article class="card card--service animate-on-scroll">
           <h3>Web Development</h3>

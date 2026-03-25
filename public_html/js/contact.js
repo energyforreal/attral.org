@@ -44,18 +44,39 @@ if (contactForm) {
       .then((data) => {
         if (data.success) {
           contactForm.style.display = 'none';
-          successMessage.style.display = 'block';
+          if (successMessage) {
+            successMessage.style.display = 'block';
+            successMessage.setAttribute('aria-hidden', 'false');
+          }
+          if (errorMessage) {
+            errorMessage.style.display = 'none';
+            errorMessage.setAttribute('aria-hidden', 'true');
+          }
           if (confirmEmail) {
             confirmEmail.textContent = formData.get('email');
           }
         } else {
-          errorMessage.style.display = 'block';
+          if (errorMessage) {
+            errorMessage.style.display = 'block';
+            errorMessage.setAttribute('aria-hidden', 'false');
+          }
+          if (successMessage) {
+            successMessage.style.display = 'none';
+            successMessage.setAttribute('aria-hidden', 'true');
+          }
           submitBtn.textContent = 'Send Inquiry →';
           submitBtn.disabled = false;
         }
       })
       .catch(() => {
-        errorMessage.style.display = 'block';
+        if (errorMessage) {
+          errorMessage.style.display = 'block';
+          errorMessage.setAttribute('aria-hidden', 'false');
+        }
+        if (successMessage) {
+          successMessage.style.display = 'none';
+          successMessage.setAttribute('aria-hidden', 'true');
+        }
         submitBtn.textContent = 'Send Inquiry →';
         submitBtn.disabled = false;
       });

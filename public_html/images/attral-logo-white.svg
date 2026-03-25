@@ -1,0 +1,15 @@
+<svg viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text-white { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 28px; fill: #FFFFFF; letter-spacing: -1px; }
+      .logo-accent { fill: #FFA500; }
+    </style>
+  </defs>
+  
+  <!-- Letter A with accent -->
+  <g>
+    <text x="0" y="32" class="logo-text-white">ATT</text>
+    <text x="90" y="32" class="logo-text-white">RAL</text>
+    <rect x="75" y="12" width="4" height="20" class="logo-accent" rx="2"/>
+  </g>
+</svg>

@@ -10,19 +10,43 @@
 
   <meta property="og:title" content="ATTRAL Projects">
   <meta property="og:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/projects.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Projects">
   <meta name="twitter:description" content="Portfolio of ATTRAL projects in PCB engineering, web development, and AI solutions.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#FFA500',
+            dark: '#1A1E26',
+            surface: '#F5F0E8',
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <meta name="theme-color" content="#FFA500">
+
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tailwind-custom.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -43,18 +67,19 @@
   </section>
 
   <section class="section" style="position:sticky;top:72px;z-index:900;background:#fff;padding:16px 0;">
-    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;">
-      <button class="filter-btn active btn-secondary" data-category="all">All</button>
-      <button class="filter-btn btn-secondary" data-category="pcb">PCB & Electronics</button>
-      <button class="filter-btn btn-secondary" data-category="web">Web Dev</button>
-      <button class="filter-btn btn-secondary" data-category="ai">AI Solutions</button>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;" role="group" aria-label="Project filters">
+      <button class="filter-btn active btn-secondary" data-category="all" aria-pressed="true" aria-controls="projects-grid">All</button>
+      <button class="filter-btn btn-secondary" data-category="pcb" aria-pressed="false" aria-controls="projects-grid">PCB & Electronics</button>
+      <button class="filter-btn btn-secondary" data-category="web" aria-pressed="false" aria-controls="projects-grid">Web Dev</button>
+      <button class="filter-btn btn-secondary" data-category="ai" aria-pressed="false" aria-controls="projects-grid">AI Solutions</button>
     </div>
+    <p id="projects-filter-status" class="sr-only" aria-live="polite"></p>
   </section>
 
   <section class="section" style="background:#fff;border-top:1px solid var(--color-border);">
-    <div class="container card-grid-4">
+    <div id="projects-grid" class="container card-grid-4">
       <article class="card card--project project-item" data-category="pcb">
-        <img class="card__image" src="images/pcb-project.jpg" alt="PCB Project" loading="lazy">
+        <img class="card__image" src="images/pcb-project.svg" alt="Industrial Controller Board — custom PCB design with EMI control" width="800" height="500" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">PCB & Electronics</span>
           <h3>Industrial Controller Board</h3>
@@ -63,7 +88,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="web">
-        <img class="card__image" src="images/web-app-project.jpg" alt="Web App" loading="lazy">
+        <img class="card__image" src="images/web-app-project.svg" alt="Supply Chain Management Platform — web application with real-time tracking" width="800" height="500" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">Web Development</span>
           <h3>Supply Chain Management Platform</h3>
@@ -72,7 +97,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="ai">
-        <img class="card__image" src="images/ai-automation-project.jpg" alt="AI Automation" loading="lazy">
+        <img class="card__image" src="images/ai-automation-project.svg" alt="Process Automation Pipeline — document ingestion with LLM summarization" width="800" height="500" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">AI Solutions</span>
           <h3>Process Automation Pipeline</h3>
@@ -81,7 +106,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="pcb">
-        <img class="card__image" src="images/pcb-assembly-project.jpg" alt="PCB Assembly" loading="lazy">
+        <img class="card__image" src="images/pcb-assembly-project.svg" alt="Medical-Grade Sensor Module — certified PCB assembly" width="800" height="500" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">PCB & Electronics</span>
           <h3>Medical-Grade Sensor Module</h3>

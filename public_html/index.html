@@ -32,19 +32,43 @@
 
   <meta property="og:title" content="ATTRAL — Engineering. Software. AI.">
   <meta property="og:description" content="End-to-end technical solutions: PCB engineering, web development, and AI systems.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL — Engineering. Software. AI.">
   <meta name="twitter:description" content="End-to-end technical solutions from Vellore, India.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#FFA500',
+            dark: '#1A1E26',
+            surface: '#F5F0E8',
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <meta name="theme-color" content="#FFA500">
+
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tailwind-custom.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -75,7 +99,7 @@
         </div>
       </div>
       <div class="animate-on-scroll fade-in-right" style="display:flex;align-items:center;justify-content:center;">
-        <img src="images/pcb-illustration.jpg" alt="Isometric circuit illustration" width="540" height="360" loading="eager" style="border-radius:12px;" />
+        <img src="images/project-1.svg" alt="Isometric circuit board illustration representing electronics engineering" width="540" height="360" loading="eager" style="border-radius:12px;" />
       </div>
     </div>
   </section>
@@ -133,7 +157,7 @@
       <h2>Projects That Prove Our Capability</h2>
       <div class="card-grid-4">
         <article class="card card--project">
-          <img class="card__image" src="images/project-1.jpg" alt="Project 1" loading="lazy">
+          <img class="card__image" src="images/project-1.svg" alt="Autonomous Sensor Board — low-power wireless IoT board for asset tracking" width="800" height="500" loading="lazy">
           <div class="card__body">
             <span class="small-uppercase">PCB & Electronics</span>
             <h3>Autonomous Sensor Board</h3>
@@ -141,7 +165,7 @@
           </div>
         </article>
         <article class="card card--project">
-          <img class="card__image" src="images/project-2.jpg" alt="Project 2" loading="lazy">
+          <img class="card__image" src="images/project-2.svg" alt="Manufacturing KPI Dashboard — real-time analytics platform for factory operations" width="800" height="500" loading="lazy">
           <div class="card__body">
             <span class="small-uppercase">Web Development</span>
             <h3>Manufacturing KPI Dashboard</h3>
@@ -149,7 +173,7 @@
           </div>
         </article>
         <article class="card card--project">
-          <img class="card__image" src="images/project-3.jpg" alt="Project 3" loading="lazy">
+          <img class="card__image" src="images/project-3.svg" alt="AI QA Review Pipeline — automated defect detection using computer vision and LLM" width="800" height="500" loading="lazy">
           <div class="card__body">
             <span class="small-uppercase">AI Automation</span>
             <h3>AI QA Review Pipeline</h3>
@@ -186,5 +210,4 @@
   </section>
 </main>
 
-<script src="js/projects-filter.js" defer></script>
 <?php include 'includes/footer.php'; ?>

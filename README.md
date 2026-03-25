@@ -6,6 +6,7 @@ B2B engineering company website. Static HTML/CSS/PHP.
 - HTML5, CSS3, Vanilla JS (no frameworks)
 - PHP 8+ (contact form backend)
 - Hosted on Hostinger shared hosting
+- Public route policy: `.html` URLs for all user-facing pages
 
 ## Local Development
 1. Clone the repo
@@ -17,6 +18,7 @@ B2B engineering company website. Static HTML/CSS/PHP.
 ## Deployment
 Upload `public_html/` contents to Hostinger `/public_html/` via File Manager.
 Ensure `/uploads/.htaccess` is in place before going live.
+Legacy `.php` page URLs are redirected to `.html` in `public_html/.htaccess`.
 
 ## File Structure
 - `public_html/` — Web root

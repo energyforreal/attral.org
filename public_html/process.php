@@ -9,13 +9,13 @@
   <link rel="canonical" href="https://attral.org/process.html">
   <meta property="og:title" content="ATTRAL Process">
   <meta property="og:description" content="Learn ATTRAL's structured engineering process for reliable delivery from discovery through support.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/process.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Process">
   <meta name="twitter:description" content="Learn ATTRAL's structured engineering process for reliable delivery from discovery through support.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

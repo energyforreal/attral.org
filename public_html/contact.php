@@ -10,13 +10,13 @@
 
   <meta property="og:title" content="ATTRAL Contact">
   <meta property="og:description" content="Contact ATTRAL for PCB design, fabrication, web development, and AI automation services.">
-  <meta property="og:image" content="https://attral.org/images/og-image.jpg">
+  <meta property="og:image" content="https://attral.org/images/attral-logo.svg">
   <meta property="og:url" content="https://attral.org/contact.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ATTRAL Contact">
   <meta name="twitter:description" content="Contact ATTRAL for PCB design, fabrication, web development, and AI automation services.">
-  <meta name="twitter:image" content="https://attral.org/images/og-image.jpg">
+  <meta name="twitter:image" content="https://attral.org/images/attral-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
