@@ -2,7 +2,9 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.php" class="brand">ATTRAL <span>A</span></a>
+    <a href="index.php" class="brand">
+      <img src="images/logo.png" alt="ATTRAL Logo" width="140" height="45" style="display:block; max-height:45px;" />
+    </a>
     <nav class="nav-links">
       <a href="index.php" class="nav-link">Home</a>
       <a href="services.php" class="nav-link">Services</a>

@@ -54,7 +54,7 @@
   <section class="section" style="background:#fff;border-top:1px solid var(--color-border);">
     <div class="container card-grid-4">
       <article class="card card--project project-item" data-category="pcb">
-        <img class="card__image" src="https://via.placeholder.com/600x360?text=PCB+Project" alt="PCB Project" loading="lazy">
+        <img class="card__image" src="images/pcb-project.jpg" alt="PCB Project" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">PCB & Electronics</span>
           <h3>Industrial Controller Board</h3>
@@ -63,7 +63,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="web">
-        <img class="card__image" src="https://via.placeholder.com/600x360?text=Web+App" alt="Web App" loading="lazy">
+        <img class="card__image" src="images/web-app-project.jpg" alt="Web App" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">Web Development</span>
           <h3>Supply Chain Management Platform</h3>
@@ -72,7 +72,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="ai">
-        <img class="card__image" src="https://via.placeholder.com/600x360?text=AI+Automation" alt="AI Automation" loading="lazy">
+        <img class="card__image" src="images/ai-automation-project.jpg" alt="AI Automation" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">AI Solutions</span>
           <h3>Process Automation Pipeline</h3>
@@ -81,7 +81,7 @@
         </div>
       </article>
       <article class="card card--project project-item" data-category="pcb">
-        <img class="card__image" src="https://via.placeholder.com/600x360?text=PCB+Assembly" alt="PCB Assembly" loading="lazy">
+        <img class="card__image" src="images/pcb-assembly-project.jpg" alt="PCB Assembly" loading="lazy">
         <div class="card__body">
           <span class="small-uppercase">PCB & Electronics</span>
           <h3>Medical-Grade Sensor Module</h3>
