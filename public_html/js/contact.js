@@ -5,7 +5,28 @@ const errorDetail = document.getElementById('error-detail');
 const confirmEmail = document.getElementById('confirm-email');
 const dropZone = document.getElementById('drop-zone');
 const fileInput = document.getElementById('file');
+const fileSelected = document.getElementById('file-selected');
+const fileSelectedName = document.getElementById('file-selected-name');
+const fileClearBtn = document.getElementById('file-clear');
 const csrfInput = document.getElementById('csrf-token');
+
+function updateFileSelectionDisplay() {
+  if (!fileInput) {
+    return;
+  }
+  const file = fileInput.files?.[0];
+  if (file && fileSelected && fileSelectedName) {
+    fileSelectedName.textContent = file.name;
+    fileSelectedName.title = file.name;
+    fileSelected.style.display = 'flex';
+    fileSelected.setAttribute('aria-hidden', 'false');
+  } else if (fileSelected && fileSelectedName) {
+    fileSelectedName.textContent = '';
+    fileSelectedName.title = '';
+    fileSelected.style.display = 'none';
+    fileSelected.setAttribute('aria-hidden', 'true');
+  }
+}
 
 const FRIENDLY_ERRORS = {
   RATE_LIMIT: 'Please wait a moment before sending another inquiry.',
@@ -101,7 +122,21 @@ if (dropZone && fileInput) {
     dropZone.style.borderColor = 'hsl(var(--grey-300))';
     if (event.dataTransfer.files.length) {
       fileInput.files = event.dataTransfer.files;
+      updateFileSelectionDisplay();
     }
+  });
+}
+
+if (fileInput) {
+  fileInput.addEventListener('change', updateFileSelectionDisplay);
+}
+
+if (fileClearBtn && fileInput) {
+  fileClearBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    fileInput.value = '';
+    updateFileSelectionDisplay();
   });
 }
 

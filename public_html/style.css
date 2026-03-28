@@ -328,6 +328,12 @@ textarea:focus-visible {
   transform: translateY(0);
 }
 
+/* Footer: ATTRAL --secondary; avoids Tailwind CDN redefining .bg-secondary later */
+footer.bg-secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
 @media (hover: none) {
   .card-hover:hover,
   .btn-hero:hover,

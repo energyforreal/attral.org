@@ -150,10 +150,6 @@
               <img src="images/pcb-project.svg" alt="Illustration representing PCB and electronics engineering services" class="w-full h-auto object-cover" width="540" height="360" loading="eager" fetchpriority="high" decoding="async" />
               <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/10"></div>
             </div>
-            <div class="absolute -top-8 -right-8 bg-white rounded-xl shadow-large p-5 border border-grey-200 transform group-hover:scale-105 transition-transform duration-300">
-              <div class="text-3xl font-bold text-primary">4</div>
-              <div class="text-sm text-grey-600 font-medium">Engineering Disciplines</div>
-            </div>
           </div>
         </div>
       </div>

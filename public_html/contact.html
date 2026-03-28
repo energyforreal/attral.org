@@ -139,6 +139,10 @@
                 <p class="text-grey-700">Drag & drop files here, or <span class="text-primary font-medium">click to browse</span></p>
                 <small class="text-grey-500 block mt-2">Accepted: PDF, ZIP, Gerber (.gbr), Eagle (.brd/.sch), STEP, Images · Max 10MB</small>
               </div>
+              <div id="file-selected" class="mt-3 flex items-center justify-between gap-3 rounded-lg border border-grey-200 bg-grey-50 px-4 py-3 text-sm" style="display: none;" role="status" aria-live="polite" aria-hidden="true">
+                <span id="file-selected-name" class="text-grey-800 font-medium truncate min-w-0" title=""></span>
+                <button type="button" id="file-clear" class="text-primary font-medium shrink-0 hover:underline">Remove</button>
+              </div>
             </div>
 
             <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
