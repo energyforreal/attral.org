@@ -3,10 +3,19 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Normalize legacy PHP routes to HTML pages
+# Ensure a single home document for "/" requests.
+DirectoryIndex index.html index.php
+
+# Canonical routes: serve HTML URLs
 RewriteCond %{THE_REQUEST} \s/+index\.php(?:[\s?]|$) [NC]
 RewriteRule ^index\.php$ / [L,R=301]
-RewriteRule ^(services|projects|process|contact)\.php$ $1.html [L,R=301,NC]
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]|$) [NC]
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteRule ^(services|projects|contact|process)\.php$ $1.html [L,R=301,NC]
+
+# These assets are PNG binaries stored with .svg extension.
+# Serve them as PNG for consistent rendering across browsers/devices.
+AddType image/png .svg
 
 # Caching
 <IfModule mod_expires.c>
@@ -16,7 +25,7 @@ RewriteRule ^(services|projects|process|contact)\.php$ $1.html [L,R=301,NC]
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 7 days"
   ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 

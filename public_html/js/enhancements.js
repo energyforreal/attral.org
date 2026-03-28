@@ -5,7 +5,7 @@
 // Card hover effects
 document.addEventListener('DOMContentLoaded', function() {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const cards = document.querySelectorAll('.card--project, .card--service');
+  const cards = document.querySelectorAll('.card-hover');
   
   if (!prefersReducedMotion) {
     cards.forEach(card => {
@@ -118,6 +118,10 @@ function setFieldValidation(field, isValid, errorMessage) {
 // Add loading state to buttons
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('form').forEach(form => {
+    if (form.id === 'contact-form') {
+      return;
+    }
+
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) {
       form.addEventListener('submit', function() {
